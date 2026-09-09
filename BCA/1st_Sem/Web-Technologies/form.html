@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Student Details</legend>
+
+        <label for="name">Name</label> * :
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus />
+        <br/><br/>
+
+        <label for="email">Email</label> :
+        <input type="email" id="email" name="email" placeholder="Enter your email" value="deepesh@gmail.com" disabled/>
+        <br/><br/>
+
+        <label for="phone">Phone</label> :
+        <input type="tel" id="phone" name="phone"  placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" />
+        <br/><br/>
+
+        <label for="password">Password</label> :
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <br/><br/>
+
+        <label>Gender</label> :
+        <input type="radio" id="male" name="gender" value="Male" checked />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <br/><br/>
+
+        <label for="course">Course</label> :
+        <select id="course" name="course" required multiple>
+            <option value="">Select Course</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+        </select>
+        <br/><br/>
+
+        <label for="departmentCourse">Course by Department</label> :
+        <select id="departmentCourse" name="departmentCourse">
+            <option value="">Select Course by Department</option>
+
+            <optgroup label="FTCA">
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </optgroup>
+
+            <optgroup label="FCBM">
+                <option value="BBA">BBA</option>
+                <option value="MBA">MBA</option>
+            </optgroup>
+        </select>
+        <br/><br/>
+
+        <label for="department">Department</label> :
+        <input list="departments" id="department" name="department">
+
+        <datalist id="departments">
+            <option value="BCA">
+            <option value="MCA">
+            <option value="BBA">
+            <option value="MBA">
+        </datalist>
+        <br/><br/>
+
+        <label for="progress">Course Progress</label> :
+        <progress id="progress" value="60" max="100"></progress>
+        <br/><br/>
+
+        <label>Hobbies</label> :
+
+        <input type="checkbox" id="cricket" name="hobbies" value="Cricket" checked>
+        <label for="cricket">Cricket</label>
+
+        <input type="checkbox" id="football" name="hobbies" value="Football">
+        <label for="football">Football</label>
+
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="singing" name="hobbies" value="Singing">
+        <label for="singing">Singing</label>
+        <br/><br/>
+
+        <label for="speaker">Speaker Volume</label> :
+        <input type="range" id="speaker" name="speaker" min="0" max="100">
+        <br/><br/>
+
+        <label for="date">Date</label> :
+        <input type="date" id="date" name="date">
+        <br/><br/>
+
+        <label for="time">Time</label> :
+        <input type="time" id="time" name="time">
+        <br/><br/>
+
+        <label for="color">Color</label> :
+        <input type="color" id="color" name="color">
+        <br/><br/>
+
+        <label for="image">Upload Image</label> :
+        <input type="file" id="image" name="image" accept="image/*">
+        <br/><br/>
+
+        <label for="image">Upload documents</label> :
+        <input type="file" id="documents" name="documents"  accept=".pdf,.doc,.docx" multiple>
+        <br/><br/>
+
+        <label for="address">Address</label> :
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea>
+        <br/><br/>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
